@@ -4,4 +4,9 @@ In this code, i would cover all of challenge that served by Rareskills. Include 
 
 #### How this code work??
 
-Let in this folder, we have `src/Add/Add.sol` and `test/Add/Add.t.sol`. To run this code, make sure the contract would be named as `AddTest`. If we would like to test our code, lets run with `forge test --mc AddTest `
+Lets in this folder, we have `src/Add/Add.sol` and `test/Add/Add.t.sol`. 
+
+To run this code, make sure the contract would be named as `AddTest`. If we would like to test our code, lets run with 
+```bash
+forge test --mc AddTest 
+```
