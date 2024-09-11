@@ -1,6 +1,6 @@
 ### Solisity exercises by RareSkills
 
-In this code, i would cover all of challenge that served by Rareskills. Include writing solidity code and also ensure the code running as well.
+In this code, i would cover all of challenge that served by [Rareskills](https://github.com/RareSkills/Solidity-Exercises). Include writing solidity code and also ensure the code running as well.
 
 #### How this code work??
 
