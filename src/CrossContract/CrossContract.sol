@@ -10,7 +10,20 @@ contract CrossContract {
         address _priceOracle1,
         address _priceOracle2
     ) external view returns (uint256) {
-        // your code here
+        if(PriceOracle1(_priceOracle1).price() == type(uint256).max){
+            return PriceOracle2(_priceOracle2).price();
+        }
+
+        if(PriceOracle2(_priceOracle2).price() == type(uint256).max){
+            return PriceOracle1(_priceOracle1).price();
+        }
+
+        if(PriceOracle1(_priceOracle1).price() <= PriceOracle2(_priceOracle2).price()){
+            return PriceOracle1(_priceOracle1).price();
+        }else{
+            return PriceOracle2(_priceOracle2).price();
+        }
+
     }
 }
 

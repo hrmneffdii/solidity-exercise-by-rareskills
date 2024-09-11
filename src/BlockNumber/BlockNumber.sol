@@ -12,6 +12,10 @@ contract BlockNumber {
     address public lastCaller;
 
     function callMe() external {
-        /// your code here
+        if(msg.sender == lastCaller){
+            revert();
+        }
+
+        lastCaller = msg.sender;
     }
 }
